@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu High - Guardian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="jjk_emblem.png" alt="JJK" class="school-img">
+        <h1>Tokyo Jujutsu High</h1>
+    </div>
+
+    <div class="nav">
+        <a href="student-details.html">Sorcerer</a>
+        <a href="parent-details.html" class="active">Guardian</a>
+        <a href="health-info.html">Cursed Info</a>
+        <a href="past-school-record.html">Origin</a>
+        <a href="final-summary.html">Contract</a>
+    </div>
+
+    <div class="container">
+        <h2>Guardian / Emergency Contact</h2>
+        <form id="parent-form"
+            onsubmit="event.preventDefault(); saveData('parent-form'); window.location.href='health-info.html';">
+
+            <div class="form-group">
+                <label>Guardian Name</label>
+                <input type="text" name="parentName" placeholder="NAME" required>
+            </div>
+
+            <div class="form-group">
+                <label>Relationship to Sorcerer</label>
+                <input type="text" name="parentRelation" placeholder="e.g. Father, Mother, Mentor">
+            </div>
+
+            <div class="form-group">
+                <label>Occupation</label>
+                <input type="text" name="parentOccupation" placeholder="JOB TITLE">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number (Mandatory)</label>
+                <input type="tel" name="parentPhone" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="parentEmail" placeholder="EMAIL">
+            </div>
+
+            <div class="form-group">
+                <label>Emergency Contact Number</label>
+                <input type="tel" name="emergencyPhone" placeholder="DIFFERENT NUMBER" required>
+            </div>
+
+            <div class="form-group">
+                <label>Any Sibling in Jujutsu High?</label>
+                <select name="siblingInSchool">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Number of Siblings (Clan Members)</label>
+                <input type="number" name="siblingsCount" placeholder="0">
+            </div>
+
+
+
+            <div style="text-align: center;">
+                <button type="submit" class="btn">Proceed</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

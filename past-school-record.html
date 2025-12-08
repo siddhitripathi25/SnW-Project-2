@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu High - Origin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="jjk_emblem.png" alt="JJK" class="school-img">
+        <h1>Tokyo Jujutsu High</h1>
+    </div>
+
+    <div class="nav">
+        <a href="student-details.html">Sorcerer</a>
+        <a href="parent-details.html">Guardian</a>
+        <a href="health-info.html">Cursed Info</a>
+        <a href="past-school-record.html" class="active">Origin</a>
+        <a href="final-summary.html">Contract</a>
+    </div>
+
+    <div class="container">
+        <h2>Sorcerer Origin</h2>
+        <form id="school-form"
+            onsubmit="event.preventDefault(); saveData('school-form'); window.location.href='final-summary.html';">
+            <div class="form-group">
+                <label>Previous School Name</label>
+                <input type="text" name="prevSchool" placeholder="ENTER SCHOOL NAME" required>
+            </div>
+
+            <div class="form-group">
+                <label>Last Class / Grade</label>
+                <input type="text" name="lastGrade" placeholder="e.g. 5th Grade">
+            </div>
+
+            <div class="form-group">
+                <label>Academic Performance (Grades)</label>
+                <input type="text" name="academicGrades" placeholder="e.g. A Grade / 90%">
+            </div>
+
+            <div class="form-group">
+                <label>Reason for Leaving</label>
+                <input type="text" name="leavingReason" placeholder="Why are you transferring?">
+            </div>
+
+            <div class="form-group">
+                <label>Transfer Certificate Available?</label>
+                <select name="transferCert">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit" class="btn">Draft Contract</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

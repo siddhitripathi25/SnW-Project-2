@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu High - Council</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="jjk_emblem.png" alt="JJK" class="school-img">
+        <h1>High Council Registry</h1>
+    </div>
+
+    <div style="text-align: center; margin: 30px;">
+        <a href="student-details.html" class="btn" style="padding: 10px 20px; font-size: 16px;">New Sorcerer</a>
+        <button onclick="localStorage.removeItem('allSubmissions'); window.location.reload();" class="btn"
+            style="background-color: #333; padding: 10px 20px; font-size: 16px;">
+            Purge Records
+        </button>
+    </div>
+
+    <div class="container" style="width: 900px;">
+        <h2>Enrolled Sorcerers</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sorcerer Name</th>
+                    <th>Guardian</th>
+                    <th>Origin</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="admin-body">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        loadAdmin();
+    </script>
+
+</body>
+
+</html>

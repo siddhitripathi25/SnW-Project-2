@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu High - Contract</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="jjk_emblem.png" alt="JJK" class="school-img">
+        <h1>Tokyo Jujutsu High</h1>
+    </div>
+
+    <div class="nav">
+        <a href="student-details.html">Sorcerer</a>
+        <a href="parent-details.html">Guardian</a>
+        <a href="health-info.html">Cursed Info</a>
+        <a href="past-school-record.html">Origin</a>
+        <a href="final-summary.html" class="active">Contract</a>
+    </div>
+
+    <div class="container">
+        <h2>Binding Vow Confirmation</h2>
+
+        <div id="summary-content">
+        </div>
+        <div style="background-color: #111; padding: 20px; border: 1px solid #333; margin-top: 20px;">
+            <h3 style="color: #8a0000; font-family: 'Oswald', sans-serif;">Declaration</h3>
+            <p style="font-size: 14px; margin-bottom: 10px;">
+                I hereby declare that the information provided above is true and accurate.
+                I agree to follow the rules of Tokyo Jujutsu High.
+                I grant permission for emergency medical treatment (Reverse Cursed Technique if available).
+            </p>
+            <label style="display: flex; align-items: center; cursor: pointer;">
+                <input type="checkbox" id="declarationCheck" style="width: 20px; height: 20px; margin-right: 10px;">
+                <span style="color: #fff;">I ACCEPT THE BINDING VOW</span>
+            </label>
+        </div>
+
+        <div style="text-align: center;">
+            <button onclick="confirmSubmission()" class="btn">Seal Vow & Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        loadSummary();
+    </script>
+</body>
+
+</html>

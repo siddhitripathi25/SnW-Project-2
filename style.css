@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+    background-color: #0a0a0a;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        url('jjk_emblem.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+    color: #e5e5e5;
+}
+
+.header {
+    text-align: center;
+    background-color: #000000;
+    padding: 30px;
+    border-bottom: 4px solid #8a0000;
+    box-shadow: 0px 0px 20px #8a0000;
+    position: relative;
+    overflow: hidden;
+}
+
+.school-img {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0px 0px 10px #6d28d9);
+
+    animation: pulseglow 3s infinite alternate;
+}
+
+@keyframes pulseglow {
+    from {
+        filter: drop-shadow(0px 0px 5px #6d28d9);
+        transform: scale(1);
+    }
+
+    to {
+        filter: drop-shadow(0px 0px 20px #a855f7);
+        transform: scale(1.05);
+    }
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 15px 0px;
+    text-shadow: 2px 2px 0px #8a0000, -2px -2px 0px #6d28d9;
+}
+
+
+.nav {
+    background-color: #111111;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.nav a {
+    color: #888888;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #ffffff;
+    border-color: #8a0000;
+    background-color: rgba(138, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(138, 0, 0, 0.5);
+}
+
+
+.container {
+    width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    border: 1px solid #333;
+    border-left: 5px solid #8a0000;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    animation: slideIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+h2 {
+    color: #8a0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+
+.form-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #a855f7;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input,
+select {
+    width: 700px;
+    background-color: #000000;
+    border: 1px solid #444;
+    color: #ffffff;
+    padding: 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #8a0000;
+    background-color: #050505;
+}
+
+.btn {
+    background-color: #8a0000;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 50px;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+
+    transition: all 0.2s;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #b30000;
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0px #ffffff;
+}
+
+.summary-list {
+    list-style: none;
+    padding: 0px;
+    border: 1px solid #333;
+}
+
+.summary-list li {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    background-color: #111;
+}
+
+.summary-list li strong {
+    color: #8a0000;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #8a0000;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    background-color: #111;
+    color: #ddd;
+}
+
+tr:hover td {
+    background-color: #1a1a1a;
+    color: #fff;
+}

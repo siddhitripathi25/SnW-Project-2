@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu High - Cursed Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="jjk_emblem.png" alt="JJK" class="school-img">
+        <h1>Tokyo Jujutsu High</h1>
+    </div>
+
+    <div class="nav">
+        <a href="student-details.html">Sorcerer</a>
+        <a href="parent-details.html">Guardian</a>
+        <a href="health-info.html" class="active">Cursed Info</a>
+        <a href="past-school-record.html">Origin</a>
+        <a href="final-summary.html">Contract</a>
+    </div>
+
+    <div class="container">
+        <h2>Cursed Energy & Health</h2>
+        <form id="health-form"
+            onsubmit="event.preventDefault(); saveData('health-form'); window.location.href='past-school-record.html';">
+            <div class="form-group">
+                <label>Blood Type</label>
+                <select name="bloodGroup" required>
+                    <option value="">SELECT TYPE</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Known Allergies (Poisons)</label>
+                <input type="text" name="allergies" placeholder="e.g. Peanuts, Pollen">
+            </div>
+
+            <div class="form-group">
+                <label>Medical Conditions / Cursed Restrictions</label>
+                <input type="text" name="medicalConditions" placeholder="Any existing conditions?">
+            </div>
+
+            <div class="form-group">
+                <label>Emergency Medical Instructions</label>
+                <input type="text" name="medicalInstructions" placeholder="Instructions in case of injury">
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit" class="btn">Proceed</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
