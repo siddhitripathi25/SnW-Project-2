@@ -28,7 +28,7 @@ A creative admission panel themed around anime, designed especially for children
 
 ## UI/UX
 
-- Design and core UI/UX concept: **Siddthi Tripathi**
+- Design and core UI/UX concept: **Siddhi Tripathi**
 - Visual enhancement and interaction improvements: **Ayush Kumar**
 
 Our UI/UX approach focuses on accessibility for children, friendly interfaces, color psychology, and smooth animation flow.
@@ -59,7 +59,7 @@ We are happy with the result and gained valuable experience throughout the devel
 
 | Name                | Role |
 |---------------------|------|
-| Siddthi Tripathi    | UI/UX Design |
+| Siddhi Tripathi    | UI/UX Design |
 | Ayush Kumar         | UI/UX Enhancements |
 | Krish Kumar Thakur  | Front-End Development |
 
