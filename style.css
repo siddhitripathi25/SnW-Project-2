@@ -16,7 +16,7 @@ body {
 
 .header {
     text-align: center;
-    background-color: #010d1b;
+    background-color: #010e1e;
     padding: 30px;
     border-bottom: 4px solid #8a0000;
     box-shadow: 0px 0px 20px #8a0000;
@@ -46,12 +46,13 @@ body {
 
 h1 {
     color: #ffffff;
-    font-family: 'Oswald', sans-serif;
+    font-family:  'Russo One', sans-serif;
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 15px 0px;
-    text-shadow: 2px 2px 0px #8a0000, -2px -2px 0px #6d28d9;
+    /* text-shadow: 2px 2px 0px #8a0000, -2px -2px 0px #6d28d9; */
+      text-shadow: 0 0 8px var(--accent-purple), 0 0 12px var(--accent-blue);
 }
 
 
@@ -134,20 +135,26 @@ label {
 input,
 select {
     width: 700px;
-    background-color: #000000;
-    border: 1px solid #444;
-    color: #ffffff;
+    /* background-color: #000000; */
+    /* border: 1px solid #444; */
+    /* color: #ffffff; */
     padding: 15px;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     transition: all 0.3s;
+    border: 2px solid var(--accent-purple);
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: #1A1F33;
+  color: var(--text-light);
 }
 
 input:focus,
 select:focus {
     outline: none;
-    border-color: #8a0000;
-    background-color: #050505;
+    /* border-color: #8a0000;
+    background-color: #050505; */
+    box-shadow: 0 0 10px var(--accent-blue);
 }
 
 .btn {
@@ -193,25 +200,36 @@ select:focus {
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+    /* width: 100%;
+    border-collapse: collapse; */
     margin-top: 20px;
+    width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-container);
+  color: var(--text-light);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 th {
-    background-color: #8a0000;
+    /* background-color: #8a0000; */
     color: white;
     text-align: left;
-    padding: 15px;
+    /* padding: 15px; */
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    background: var(--accent-purple);
+    padding: 12px 16px;
+    border-bottom: 1px solid #2A2F45;
+   
 }
 
 td {
-    padding: 15px;
+    /* padding: 15px; */
     border-bottom: 1px solid #333;
     background-color: #111;
     color: #ddd;
+    padding: 12px 16px;
+    border-bottom: 1px solid #2A2F45;
 }
 
 tr:hover td {
