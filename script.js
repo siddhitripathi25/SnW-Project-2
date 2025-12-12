@@ -98,7 +98,7 @@ function confirmSubmission() {
     }
 
     alert("Binding Vow Sealed. Application Submitted.");
-    window.location.href = "student-details.html";
+    window.location.href = "index.html";
 }
 
 function loadAdmin() {
